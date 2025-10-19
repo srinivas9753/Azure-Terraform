@@ -2,21 +2,6 @@
 # main.tf
 # Root configuration using Terraform modules for Azure Infra
 ############################################################
-
-terraform {
-  required_version = ">= 1.6.0"
-
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~> 3.120.0"
-    }
-    random = {
-      source  = "hashicorp/random"
-      version = "~> 3.5.0"
-    }
-  }
-
   backend "azurerm" {
     resource_group_name  = var.backend_resource_group
     storage_account_name = var.backend_storage_account
