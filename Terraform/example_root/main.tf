@@ -10,12 +10,6 @@
   }
 }
 
-provider "azurerm" {
-  features {}
-}
-
-provider "random" {}
-
 # Random suffix for unique naming
 resource "random_string" "suffix" {
   length  = 6
