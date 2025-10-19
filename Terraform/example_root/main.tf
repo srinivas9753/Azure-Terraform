@@ -2,13 +2,6 @@
 # main.tf
 # Root configuration using Terraform modules for Azure Infra
 ############################################################
-  backend "azurerm" {
-    resource_group_name  = var.backend_resource_group
-    storage_account_name = var.backend_storage_account
-    container_name       = var.backend_container
-    key                  = "envs/${var.environment}/terraform.tfstate"
-  }
-}
 
 # Random suffix for unique naming
 resource "random_string" "suffix" {
