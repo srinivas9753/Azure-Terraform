@@ -12,11 +12,6 @@ location = "eastus"
 # Backend Configuration
 #############################################
 
-# Azure Storage Account backend for Terraform remote state
-backend_resource_group  = "tfstate-rg"
-backend_storage_account = "tfstatestorageacct"
-backend_container       = "tfstate"
-
 #############################################
 # Subscription & Tenant Details
 #############################################
