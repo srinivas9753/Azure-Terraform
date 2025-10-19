@@ -100,7 +100,29 @@ terraform/
 ├── providers.tf         # Provider configuration
 ├── backend.tf           # Remote backend (Azure Storage)
 ├── terraform.tfvars     # Custom variable values
+├── modules/
+│   ├── resource-group/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── network/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── public-ip/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── load-balancer/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   └── virtual-machine/
+│       ├── main.tf
+│       ├── variables.tf
+│       └── outputs.tf
 └── README.md            # Project documentation
+
 ```
 
 ---
