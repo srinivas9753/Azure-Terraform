@@ -12,6 +12,11 @@ terraform {
       version = "~> 3.5.0"
     }
   }
+provider "azurerm" {
+  features {}
+}
+
+provider "random" {}
 
 # (Optional) Set default subscription or tenant IDs if not using environment variables
   subscription_id = var.subscription_id
